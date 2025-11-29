@@ -1,0 +1,101 @@
+.page {
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    position: relative;
+}
+
+.container {
+    border: solid whitesmoke 2px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    margin: 20px;
+    flex: 1;
+
+    @media (min-width: 1024px) {
+        margin: 40px 100px;
+    }
+}
+
+.textContainer {
+    margin: auto;
+    white-space: nowrap;
+    padding: 30px;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media (min-width: 1024px) {
+        font-size: 72px;
+        margin-bottom: 30px;
+    }
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media (min-width: 1024px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+.link {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: whitesmoke;
+
+    @media (min-width: 1024px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(212, 212, 212);
+}
+
+.image {
+    position: absolute;
+    height: 40%;
+
+    @media (min-width: 768px) {
+        height: 50%;
+    }
+
+    @media (min-width: 1024px) {
+        height: 60%;
+    }
+}
+
+.fox {
+    @extend .image;
+    top: 8px;
+    left: 8px;
+
+    @media (min-width: 1024px) {
+        top: 20px;
+        left: 60px;
+    }
+}
+
+.raven {
+    @extend .image;
+    bottom: 8px;
+    right: 8px;
+
+    @media (min-width: 1024px) {
+        bottom: 20px;
+        right: 60px;
+    }
+}

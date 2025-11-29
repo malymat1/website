@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    height: 32px;
+    padding: 10px;
+}
+
+.languageSwitch {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    user-select: none;
+    color: whitesmoke;
+}
+
+.globeIcon {
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.arrowIcon {
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+.text {
+    align-items: center;
+    line-height: 1;
+    display: flex;
+    min-width: 30px;
+}
