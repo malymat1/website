@@ -7,12 +7,14 @@ i18n.use(initReactI18next).init({
             translation: {
                 abreviation: "CZ",
                 title: "malá svatba",
+                wip: "Matěj na webovkách ještě pracuje, dejte mu chvilku čas",
             },
         },
         no: {
             translation: {
                 abreviation: "NO",
                 title: "lite bryllup",
+                wip: "Matěj jobber fortsatt med nettsidene, gi ham litt tid",
             },
         },
     },

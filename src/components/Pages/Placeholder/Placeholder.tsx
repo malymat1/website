@@ -1,5 +1,5 @@
 import raven from "../../../assets/raven.svg";
-import fox from "../../../assets/fox.svg";
+import fox from "../../../assets/fox_sign.svg";
 import styles from "./Placeholder.module.scss";
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +17,12 @@ export default function Placeholder() {
                     </a>
                 </div>
             </div>
-            <img className={styles.fox} src={fox} alt="Fox image" />
+            <div className={styles.foxContainer}>
+                <img className={styles.fox} src={fox} alt="Fox image" />
+                <div className={styles.signOverlay}>
+                    <div className={styles.signText}>{t("wip")}</div>
+                </div>
+            </div>
             <img className={styles.raven} src={raven} alt="Raven image" />
         </div>
     );
