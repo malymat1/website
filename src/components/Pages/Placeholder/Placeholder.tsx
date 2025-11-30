@@ -11,7 +11,7 @@ export default function Placeholder() {
             <div className={styles.container}>
                 <div className={styles.textContainer}>
                     <div className={styles.title}>{t("title")}</div>
-                    <div className={styles.text}>11.7.2026 14:00</div>
+                    <div className={styles.text}>11.7.2026 11:07</div>
                     <a className={styles.link} href="https://mapy.com/s/fozadahenu" target="_blank">
                         50.4033856N, 15.2282519E
                     </a>
