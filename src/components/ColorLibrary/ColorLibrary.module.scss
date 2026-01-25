@@ -1,0 +1,14 @@
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.element {
+    width: 20px;
+    height: 20px;
+    border: solid whitesmoke 1px;
+    border-radius: 4px;
+}

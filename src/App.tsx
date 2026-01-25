@@ -1,12 +1,18 @@
-import Placeholder from "./components/Pages/Placeholder/Placeholder";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Home from "./components/Pages/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
-        <div>
+        <BrowserRouter>
             <Header />
-            <Placeholder />
-        </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<div>Ya lost buddy?</div>} />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
     );
 }
 

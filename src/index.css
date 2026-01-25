@@ -2,6 +2,8 @@
 
 :root {
     --background-color: #6d8e8d;
+    --main-color: #6d8e8d;
+    --main-color-dark: #4e6564;
 
     font-family: "Special Elite", "Courier New", Courier, monospace;
     background-color: var(--background-color);
