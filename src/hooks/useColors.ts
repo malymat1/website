@@ -1,6 +1,4 @@
-import { initializeApp } from "firebase/app";
 import {
-    getFirestore,
     onSnapshot,
     collection,
     addDoc,
@@ -12,19 +10,7 @@ import type { DocumentData } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import type Color from "../models/Color";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyB6QbeGrzONJxygmOvxshNbj6aJwch3L8c",
-    authDomain: "fakt-mala-svatba.firebaseapp.com",
-    projectId: "fakt-mala-svatba",
-    storageBucket: "fakt-mala-svatba.firebasestorage.app",
-    messagingSenderId: "212748346313",
-    appId: "1:212748346313:web:eaa52499f2854f81093e18",
-    measurementId: "G-W8HBEVY0SC",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+import { db } from "./initializeFirebase";
 
 export function useColors() {
     const [colors, setColors] = useState<Color[]>([]);

@@ -1,0 +1,51 @@
+.giftItem {
+    border: solid whitesmoke 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .imageLink {
+        position: relative;
+        line-height: 0;
+
+        .icon {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: whitesmoke;
+            height: 30px;
+            width: 30px;
+            filter: drop-shadow(0 0 10px #000000);
+        }
+
+        .image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+    .infoPanel {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+        justify-content: space-between;
+
+        .title {
+            color: whitesmoke;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .buttonContainer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

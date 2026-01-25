@@ -21,11 +21,12 @@ export default function ColorPicker({}: ColorPickerProps) {
             <div className={styles.buttonContainer}>
                 <div className={styles.colorPreview} style={{ backgroundColor: color }}></div>
                 <Button
-                    label={t("colorPickerBtn")}
                     onClick={() => {
                         addColor(color);
                     }}
-                ></Button>
+                >
+                    {t("colorPickerBtn")}
+                </Button>
             </div>
         </div>
     );

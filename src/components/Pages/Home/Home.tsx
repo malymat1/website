@@ -7,10 +7,12 @@ import Button from "../../Button/Button";
 import ColorPicker from "../../ColorPicker/ColorPicker";
 import { useColors } from "../../../hooks/useColors";
 import ColorLibrary from "../../ColorLibrary/ColorLibrary";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
     const { t } = useTranslation();
     const { colors } = useColors();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -32,10 +34,10 @@ export default function Home() {
                 </div>
             </div>
             <Section title={t("regTitle")} paragraphs={[t("regText")]}>
-                <Button label={t("regBtn")} onClick={() => {}} />
+                <Button onClick={() => {}}>{t("regBtn")}</Button>
             </Section>
             <Section title={t("giftsTitle")} paragraphs={[t("giftsText")]}>
-                <Button label={t("giftsBtn")} onClick={() => {}} />
+                <Button onClick={() => navigate("/gifts")}>{t("giftsBtn")}</Button>
             </Section>
             <Section
                 title={t("dressTitle")}
@@ -47,11 +49,12 @@ export default function Home() {
             <Section title={t("placeTitle")} paragraphs={[t("placeText")]}>
                 <iframe className={styles.map} src="https://mapy.com/s/hobezudeza"></iframe>
                 <Button
-                    label={t("placeBtn")}
                     onClick={() =>
                         window.open("https://www.brozuv-mlyn.cz/", "_blank", "noopener,noreferrer")
                     }
-                ></Button>
+                >
+                    {t("placeBtn")}
+                </Button>
             </Section>
         </>
     );
