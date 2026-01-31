@@ -5,7 +5,7 @@
     border: solid whitesmoke 2px;
 
     @media (min-width: 1500px) {
-        margin: 108px 100px 0 100px;
+        margin: 38px 100px 0 100px;
     }
 
     .title {
@@ -16,7 +16,6 @@
         transform: translateX(-50%) translateY(-50%);
         background-color: var(--background-color);
         padding: 0 20px;
-        white-space: nowrap;
     }
 
     .paragraphsContainer {

@@ -3,4 +3,8 @@
     gap: 10px;
     margin: 0 15px;
     grid-template-columns: repeat(var(--columns, 2), 1fr);
+
+    @media (min-width: 1500px) {
+        margin: 15px 100px 0 100px;
+    }
 }

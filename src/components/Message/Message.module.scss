@@ -1,0 +1,38 @@
+.message {
+    padding: 10px 20px;
+    background-color: var(--dark-green);
+    border-radius: 4px;
+
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+
+    display: flex;
+    gap: 10px;
+
+    .text {
+        font-size: 20px;
+        margin-top: 5px;
+        color: whitesmoke;
+    }
+
+    .icon {
+        flex-shrink: 0;
+        width: 25px;
+        height: auto;
+        color: whitesmoke;
+    }
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+.error {
+    background-color: var(--dark-red);
+}

@@ -22,12 +22,14 @@
     transition: filter 0.2s;
 }
 
+.buttonConcise:hover,
 .button:hover {
     cursor: pointer;
     filter: brightness(0.85);
 }
 
 .button:disabled,
+.buttonConcise:disabled,
 .disabled {
     background-color: #ccc;
     color: #888;

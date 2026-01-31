@@ -15,7 +15,7 @@ export default function Section({ title, paragraphs, children }: SectionProps) {
                 {paragraphs.map((par, index) => (
                     <React.Fragment key={index}>
                         <div className={styles.paragraph}>{par}</div>
-                        {index < paragraphs.length - 1 && <hr className={styles.hr} />}
+                        {index < paragraphs.length - 1 && <div className={styles.divider} />}
                     </React.Fragment>
                 ))}
             </div>

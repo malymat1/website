@@ -5,6 +5,9 @@
     --main-color: #6d8e8d;
     --main-color-dark: #4e6564;
 
+    --dark-red: #560000;
+    --dark-green: #004e3a;
+
     font-family: "Special Elite", "Courier New", Courier, monospace;
     background-color: var(--background-color);
 }

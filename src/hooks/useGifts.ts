@@ -1,4 +1,4 @@
-import { onSnapshot, collection } from "firebase/firestore";
+import { onSnapshot, collection, updateDoc, doc, getDoc } from "firebase/firestore";
 import type { DocumentData } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import type Gift from "../models/Gift";
@@ -20,5 +20,17 @@ export function useGifts() {
         return () => unsubscribe();
     }, []);
 
-    return { gifts };
+    const reserveGift = async (giftId: string, name: string) => {
+        const giftDocRef = doc(db, "gifts", giftId);
+        const giftDoc = await getDoc(giftDocRef);
+        if (giftDoc.exists() && giftDoc.data().reserved === true) {
+            throw new Error("This gift is already reserved.");
+        }
+        await updateDoc(giftDocRef, {
+            reserved: true,
+            reserver: name,
+        });
+    };
+
+    return { gifts, reserveGift };
 }

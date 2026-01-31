@@ -6,9 +6,10 @@ import { useTranslation } from "react-i18next";
 
 interface GiftItemProps {
     gift: Gift;
+    onClick: () => void;
 }
 
-export default function GiftItem({ gift }: GiftItemProps) {
+export default function GiftItem({ gift, onClick }: GiftItemProps) {
     const { t } = useTranslation();
 
     return (
@@ -26,7 +27,7 @@ export default function GiftItem({ gift }: GiftItemProps) {
                     {gift.title}
                 </a>
                 <div className={styles.buttonContainer}>
-                    <Button onClick={() => {}} disabled={gift.reserved}>
+                    <Button onClick={onClick} disabled={gift.reserved}>
                         {t("reserve")}
                     </Button>
                 </div>

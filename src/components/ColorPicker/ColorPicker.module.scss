@@ -40,9 +40,15 @@
 
 .buttonContainer {
     display: flex;
-    gap: 20px;
     align-items: center;
     margin: 10px 0;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (min-width: 478px) {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
 .colorPreview {

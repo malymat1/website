@@ -5,6 +5,8 @@ import {
     serverTimestamp,
     query,
     orderBy,
+    deleteDoc,
+    doc,
 } from "firebase/firestore";
 import type { DocumentData } from "firebase/firestore";
 import { useEffect, useState } from "react";
@@ -29,8 +31,17 @@ export function useColors() {
     }, []);
 
     const addColor = async (code: string) => {
-        await addDoc(collection(db, "colors"), { code, createdAt: serverTimestamp() });
+        const document = await addDoc(collection(db, "colors"), {
+            code,
+            createdAt: serverTimestamp(),
+        });
+        return document.id;
     };
 
-    return { colors, addColor };
+    const removeColor = async (id: string) => {
+        const colorDocRef = doc(db, "colors", id);
+        await deleteDoc(colorDocRef);
+    };
+
+    return { colors, addColor, removeColor };
 }

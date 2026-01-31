@@ -12,31 +12,55 @@ i18n.use(initReactI18next).init({
 
                 // sections
                 regTitle: "přihlášení",
-                regText:
+                regText1:
                     "Pokud víte, že dorazíte (a jste pozvaní), dejte nám, prosím, vědět. Pojistíte si tak, že na vás zbyde dost jídla a my budeme vědět, na koho se můžeme těšit.",
+                regText2:
+                    "Kdo se nepřihlásí do 11.6. 13:13, nechť si sobě přiveze vlastní židličku a toasty.",
                 regBtn: "dejte nám vědět!",
 
                 giftsTitle: "dary",
-                giftsText:
-                    "Pokud nás chcete obohatit nejen svou přítomností, velice oceníme knížku dle vašeho výběru, o které si myslíte, že by nám neměla chybět v knihovničce, IKEA poukázky nebo finační obnos. Pokud se vám ani jedna z možností moc nezdá, je možné se inspirovat seznamem přání níže.",
+                giftsText1:
+                    "Pokud nás chcete obohatit nejen svou přítomností, velice oceníme knížku dle vašeho výběru, o které si myslíte, že by nám neměla chybět v knihovničce, IKEA poukázky nebo finační obnos.",
+                giftsText2:
+                    "Pokud se vám ani jedna z možností moc nezdá, je možné se inspirovat seznamem přání níže.",
                 giftsBtn: "dejte nám něco!",
 
                 dressTitle: "oděv",
-                dressText1: "Ano.",
+                dressText1:
+                    "Oblečte se do čehokoliv uznáte za vhodné, jen byste neměli vypadat líp než my. Svatba se bude konat na louce u lesa, takže doporučujeme být bosky.",
                 dressText2:
-                    "Oblečte se do čehokoliv uznáte za vhodné, jen byste neměli vypadat líp než ženich a nevěsta. Svatba se bude konat na louce u lesa, takže doporučujeme být bosky.",
-                dressText3:
-                    "Barvy svatby jsou na výběr níže. Dejte vědět, co si vezmete na sebe a třeba se s vámi někdo sladí. (Kdo tam dá bílou, tak toho odprásknu.)",
-                colorPickerBtn: "přidat barvu",
+                    "Barvy svatby jsou na výběr níže. Dejte vědět, co si vezmete na sebe a třeba se s vámi někdo sladí (uznávám, dát bílou by bylo skutečně hodně vtipný, ale zkuste tohle vaše nutkání překonat).",
+                colorPickerBtn: "přidejte barvu!",
+                colorPickerUndoBtn: "vzít zpátky",
 
-                fotoTitle: "foto",
-                fotoText1:
+                photoTitle: "foto",
+                photoText1:
                     "Zde najdete pár fotografií našich skromných maličkostí (abyste věděli, komu předat dary).",
 
                 placeTitle: "místo",
-                placeText:
-                    "Je to tady a tady a bude to tak a tak. Plus informace o přespání a parkování.",
+                placeText1:
+                    "Svatba se koná na louce u Brožova mlýna nedaleko vesnice Važice. Je to trochu v háji, ale nemusíte se bát, že nezaparkujete. Připravíme vám tam fakt parádní parkoviště (louku).",
+                placeText2:
+                    "Kdyby se někomu přece jen na venkově zalíbilo a chtěl by se zdržet přes noc, tak může využít možnosti přespání na louce ve vlastním stanu, případně ve spacáku v prostorách mlýna (na půdě, ve stodole...)",
+                placeText3: "Pokud jste na stan moc velký fajnovky, tak se můžete podívat ",
+                placeText4: "do tabulky",
+                placeText5: " na možnosti ubytování v okolí.",
                 placeBtn: "odkaz na stránky",
+                reserve: "zabrat",
+                reserveModalText1: "Opravdu si pro sebe chci zabrat ",
+                reserveModalText2: "Ať mi ruka upadne, jestli to pak nepřinesu.",
+                reserveModalInputPlaceholder: "Tvoje jméno...",
+                reserveError: "Dárek se nepodařilo zarezervovat.",
+                reserveSuccess: "Dárek úspěšně rezervován.",
+                endTitle: "otázky?",
+                endText1: "Tohle už je všechno.",
+                endText2:
+                    "Pokud vám nějaká informace chybí, tak se určitě ozvěte. Rádi vám odpovíme, pokud vaše otázka nebude vyloženě hloupá (hehe).",
+
+                // gifts page
+                giftsPageText1:
+                    "Zatím tady toho moc není, víme, ale máme v plánu sem něco průběžně přidávat.",
+                giftsPageText2: "Co si budeme, stejně by to nikdo takhle dopředu nekupoval.",
             },
         },
         no: {
@@ -44,26 +68,57 @@ i18n.use(initReactI18next).init({
                 abreviation: "NO",
                 title: "lite bryllup",
                 wip: "Matěj jobber fortsatt med nettsidene, gi ham litt tid",
+                footerText: "velkommen til slutten av alt",
 
-                // sections
                 regTitle: "påmelding",
-                regText:
-                    "Hvis du vet at du kommer (og er invitert), gi oss gjerne beskjed. Da sikrer du at det er nok mat til deg, og vi vet hvem vi kan glede oss til.",
+                regText1:
+                    "Hvis du vet at du kommer (og er invitert), gi oss gjerne beskjed. Da sikrer du at det blir nok mat til deg, og vi vet hvem vi kan glede oss til.",
+                regText2:
+                    "Den som ikke melder seg på innen 11.6. kl. 13:13, får ta med egen stol og toast.",
                 regBtn: "gi oss beskjed!",
+
                 giftsTitle: "gaver",
-                giftsText:
-                    "Hvis dere ønsker å berike oss ikke bare med deres tilstedeværelse, setter vi stor pris på en bok etter eget valg som dere mener ikke bør mangle i bokhyllen vår, IKEA-gavekort eller et økonomisk bidrag. Hvis ingen av alternativene frister så mye, kan dere la dere inspirere av ønskelisten nedenfor.",
+                giftsText1:
+                    "Hvis du ønsker å berike oss ikke bare med ditt nærvær, setter vi stor pris på en bok etter eget valg som du mener ikke bør mangle i biblioteket vårt, IKEA-gavekort eller et pengebeløp.",
+                giftsText2:
+                    "Hvis ingen av alternativene helt frister, kan du la deg inspirere av ønskelisten nedenfor.",
                 giftsBtn: "gi oss noe!",
+
                 dressTitle: "antrekk",
-                dressText1: "Ja.",
+                dressText1:
+                    "Kle deg i hva du mener er passende, bare ikke se bedre ut enn oss. Bryllupet arrangeres på en eng ved skogen, så vi anbefaler å være barbeint.",
                 dressText2:
-                    "Kle dere i det dere synes passer, bare ikke se bedre ut enn bruden og brudgommen. Bryllupet vil finne sted på en eng ved skogen, så vi anbefaler å gå barbeint.",
-                dressText3:
-                    "Bryllupsfargene kan velges nedenfor. Gi beskjed om hva du har tenkt å ha på deg, så kanskje noen matcher med deg.\nDen som har på seg hvitt, den skyter jeg.",
-                colorPickerBtn: "legg til farge",
-                fotoTitle: "foto",
-                fotoText1:
-                    "Her finner dere noen bilder av våre beskjedne små personligheter (så dere vet hvem dere skal gi gavene til).",
+                    "Bryllupets farger finner du nedenfor. Gi beskjed om hva du vil ha på deg – kanskje noen matcher deg (jeg innser at hvitt ville vært veldig morsomt, men prøv å motstå fristelsen).",
+                colorPickerBtn: "legg til farge!",
+                colorPickerUndoBtn: "angre",
+
+                photoTitle: "foto",
+                photoText1:
+                    "Her finner du noen bilder av våre beskjedne selv (slik at du vet hvem du skal gi gavene til).",
+
+                placeTitle: "sted",
+                placeText1:
+                    "Bryllupet finner sted på en eng ved Brožův mølle nær landsbyen Važice. Det er litt avsides, men du trenger ikke være redd for å ikke finne parkering. Vi ordner et skikkelig flott parkeringsområde (en eng).",
+                placeText2:
+                    "Hvis noen skulle like landsbygda så mye at de vil bli over natten, er det mulig å overnatte på engen i eget telt, eller i sovepose inne i møllen (på loftet, i låven ...).",
+                placeText3: "Hvis du er for fintfølende for telt, kan du se ",
+                placeText4: "i tabellen",
+                placeText5: " for overnattingsmuligheter i området.",
+                placeBtn: "lenke til siden",
+                reserve: "reservere",
+                reserveModalText1: "Jeg vil virkelig reservere ",
+                reserveModalText2: "Må hånden min falle av hvis jeg ikke tar det med.",
+                reserveModalInputPlaceholder: "Ditt navn...",
+                reserveError: "Gaven kunne ikke reserveres.",
+                reserveSuccess: "Gaven ble reservert.",
+                endTitle: "spørsmål?",
+                endText1: "Det var alt.",
+                endText2:
+                    "Hvis du savner noen informasjon, så ta gjerne kontakt. Vi svarer gjerne – så lenge spørsmålet ikke er direkte dumt (hehe).",
+
+                giftsPageText1:
+                    "Foreløpig er det ikke så mye her, vi vet, men vi planlegger å legge til ting etter hvert.",
+                giftsPageText2: "La oss være ærlige, ingen ville kjøpt det så tidlig uansett.",
             },
         },
     },
