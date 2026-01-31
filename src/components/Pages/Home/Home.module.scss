@@ -77,10 +77,14 @@
 
 .fox {
     position: absolute;
-    height: 40%;
+    height: 30%;
 
     top: 8px;
     left: 8px;
+
+    @media (min-width: 330px) {
+        height: 40%;
+    }
 
     @media (min-width: 768px) {
         height: 50%;
@@ -94,10 +98,14 @@
 
 .raven {
     position: absolute;
-    height: 40%;
+    height: 30%;
 
     bottom: 8px;
     right: 8px;
+
+    @media (min-width: 330px) {
+        height: 40%;
+    }
 
     @media (min-width: 768px) {
         height: 50%;
