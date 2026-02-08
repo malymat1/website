@@ -19,7 +19,7 @@ export default function ColorPicker({}: ColorPickerProps) {
             return;
         }
         removeColor(addedIds[addedIds.length - 1]);
-        setAddedIds((prev) => prev.splice(-1));
+        setAddedIds((prev) => prev.slice(0, -1));
     }
 
     return (
