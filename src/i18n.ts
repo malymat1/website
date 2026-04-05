@@ -22,12 +22,12 @@ i18n.use(initReactI18next).init({
                 giftsText1:
                     "Pokud nás chcete obohatit nejen svou přítomností, velice oceníme knížku dle vašeho výběru, o které si myslíte, že by nám neměla chybět v knihovničce, IKEA poukázky nebo finační obnos.",
                 giftsText2:
-                    "Pokud se vám ani jedna z možností moc nezdá, je možné se inspirovat seznamem přání níže.",
+                    "Pokud se vám ani jedna z možností moc nezdá, je možné se inspirovat seznamem přání níže. Děkujeme moc!",
                 giftsBtn: "dejte nám něco!",
 
                 dressTitle: "oděv",
                 dressText1:
-                    "Oblečte se do čehokoliv uznáte za vhodné, jen byste neměli vypadat líp než my. Svatba se bude konat na louce u lesa, takže doporučujeme být bosky.",
+                    "Oblečte se do čehokoliv uznáte za vhodné, jen byste neměli vypadat líp než my. Svatba se bude konat na louce u lesa, takže doporučujeme vybrat adekvátní obuv (nebo třeba být bosky, hehe).",
                 dressText2:
                     "Barvy svatby jsou na výběr níže. Dejte vědět, co si vezmete na sebe a třeba se s vámi někdo sladí (uznávám, dát bílou by bylo skutečně hodně vtipný, ale zkuste tohle vaše nutkání překonat).",
                 colorPickerBtn: "přidejte barvu!",
@@ -41,10 +41,12 @@ i18n.use(initReactI18next).init({
                 placeText1:
                     "Svatba se koná na louce u Brožova mlýna nedaleko vesnice Važice. Je to trochu v háji, ale nemusíte se bát, že nezaparkujete. Připravíme vám tam fakt parádní parkoviště (louku).",
                 placeText2:
-                    "Kdyby se někomu přece jen na venkově zalíbilo a chtěl by se zdržet přes noc, tak může využít možnosti přespání na louce ve vlastním stanu, případně ve spacáku v prostorách mlýna (na půdě, ve stodole...)",
+                    "Kdyby se někomu přece jen na venkově zalíbilo a chtěl by se zdržet přes noc, tak může využít možnosti přespání na louce ve vlastním stanu, případně ve spacáku v prostorách mlýna (na půdě, ve stodole...).",
                 placeText3: "Pokud jste na stan moc velký fajnovky, tak se můžete podívat ",
                 placeText4: "do tabulky",
                 placeText5: " na možnosti ubytování v okolí.",
+                placeText6:
+                    "Pokud pánové stihnou všechno dostavět, měla by být na místě možnost koupání v malém jezírku, kterou by třeba některé děti rády využily. Tak je případně vybavte vším potřebným.",
                 placeBtn: "odkaz na stránky",
                 reserve: "zabrat",
                 reserveModalText1: "Opravdu si pro sebe chci zabrat ",
@@ -86,7 +88,7 @@ i18n.use(initReactI18next).init({
 
                 dressTitle: "antrekk",
                 dressText1:
-                    "Kle deg i hva du mener er passende, bare ikke se bedre ut enn oss. Bryllupet arrangeres på en eng ved skogen, så vi anbefaler å være barbeint.",
+                    "Kle deg i det du føler deg komfortabel i, bare ikke se bedre ut enn oss. Bryllupet vil finne sted på en eng i nærheten av skogen, så vi anbefaler å velge passende fottøy (eller kanskje til og med gå barbeint, hehe).",
                 dressText2:
                     "Bryllupets farger finner du nedenfor. Gi beskjed om hva du vil ha på deg – kanskje noen matcher deg (jeg innser at hvitt ville vært veldig morsomt, men prøv å motstå fristelsen).",
                 colorPickerBtn: "legg til farge!",
@@ -104,6 +106,8 @@ i18n.use(initReactI18next).init({
                 placeText3: "Hvis du er for fintfølende for telt, kan du se ",
                 placeText4: "i tabellen",
                 placeText5: " for overnattingsmuligheter i området.",
+                placeText6:
+                    "Hvis herrene rekker å gjøre alt ferdig, skal det være mulig å bade i et lite tjern på stedet, noe som kanskje noen av barna gjerne vil benytte seg av. Sørg derfor for å utstyre dem med alt de trenger.",
                 placeBtn: "lenke til siden",
                 reserve: "reservere",
                 reserveModalText1: "Jeg vil virkelig reservere ",

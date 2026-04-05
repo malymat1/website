@@ -9,6 +9,7 @@ import { useColors } from "../../../hooks/useColors";
 import ColorLibrary from "../../ColorLibrary/ColorLibrary";
 import { useNavigate } from "react-router-dom";
 import Carousel from "../../Carousel/Carousel";
+import qrCode from "../../../assets/qr.svg";
 
 export default function Home() {
     const { t } = useTranslation();
@@ -40,7 +41,14 @@ export default function Home() {
                     {t("regBtn")}
                 </Button>
             </Section>
-            <Section title={t("giftsTitle")} paragraphs={[t("giftsText1"), t("giftsText2")]}>
+            <Section
+                title={t("giftsTitle")}
+                paragraphs={[
+                    t("giftsText1"),
+                    <img className={styles.qr} src={qrCode} />,
+                    t("giftsText2"),
+                ]}
+            >
                 <Button onClick={() => navigate("/gifts")}>{t("giftsBtn")}</Button>
             </Section>
             <Section title={t("dressTitle")} paragraphs={[t("dressText1"), t("dressText2")]}>
@@ -59,6 +67,7 @@ export default function Home() {
                     </a>
                     {t("placeText5")}
                 </div>
+                <div className={styles.paragraph}>{t("placeText6")}</div>
                 <iframe className={styles.map} src="https://mapy.com/s/hobezudeza"></iframe>
                 <Button
                     onClick={() =>

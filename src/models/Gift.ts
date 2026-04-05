@@ -5,4 +5,5 @@ export default interface Gift {
     reserved: boolean;
     reserver: string;
     title: string;
+    sort: string | undefined;
 }

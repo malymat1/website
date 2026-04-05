@@ -15,6 +15,19 @@ export function useGifts() {
                 id: doc.id,
                 ...(doc.data() as DocumentData),
             })) as Gift[];
+            data.sort((a, b) => {
+                if (a.sort === undefined) {
+                    if (b.sort === undefined) {
+                        return 0;
+                    }
+                    return 1;
+                } else {
+                    if (b.sort === undefined) {
+                        return -1;
+                    }
+                    return a.sort.localeCompare(b.sort);
+                }
+            });
             setGifts(data);
         });
         return () => unsubscribe();
